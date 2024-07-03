@@ -1,7 +1,7 @@
 {
-  "name": "hello-world",
+  "name": "panza-chrome-extension",
   "version": "0.1.0",
-  "description": "InboxSDK test extension",
+  "description": "A chrome extension to connect a locally running Panza server to Gmail in the browser.",
   "private": true,
   "browserslist": "last 4 Chrome versions",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/InboxSDK/hello-world.git"
+    "url": "git+https://github.com/shawseanyang/shawseanyang-panza-chrome-extension"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/InboxSDK/hello-world/issues"
+    "url": "https://github.com/shawseanyang/shawseanyang-panza-chrome-extension/issues"
   },
-  "homepage": "https://github.com/InboxSDK/hello-world#readme",
+  "homepage": "https://github.com/shawseanyang/shawseanyang-panza-chrome-extension#readme",
   "dependencies": {
     "@inboxsdk/core": "^2.1.51"
   },

@@ -1,6 +1,6 @@
 {
-  "name": "Example Gmail Extension",
-  "description": "Example extension showing use of the Streak Gmail SDK",
+  "name": "Panza Chrome Extension",
+  "description": "A chrome extension to connect a locally running Panza server to Gmail in the browser.",
   "version": "0.1",
   "content_scripts": [
     {
