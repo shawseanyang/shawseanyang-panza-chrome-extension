@@ -16,6 +16,12 @@ async function get_panza_suggestion(text) {
   });
 }
 
+function toHtml(text) {
+  // Replace \r and \n with <br> tag
+  text = text.replace(/(?:\r\n|\r|\n)/g, '<br>');
+  return `<div>${text}</div>`;
+}
+
 InboxSDK.load(2, "sdk_panza_4e702e3f8e").then((sdk) => {
   sdk.Compose.registerComposeViewHandler((composeView) => {
     let loadingStartTime;
@@ -34,7 +40,7 @@ InboxSDK.load(2, "sdk_panza_4e702e3f8e").then((sdk) => {
         get_panza_suggestion(text).then((suggestion) => {
           const loadingTime = ((Date.now() - loadingStartTime) / 1000).toFixed(2);
           event.dropdown.el.innerHTML = `Loaded in ${loadingTime} seconds`;
-          composeView.setBodyText(suggestion);
+          composeView.setBodyHTML(toHtml(suggestion));
         })
         .catch((error) => {
           event.dropdown.el.innerHTML = `Error: ${error}`;
