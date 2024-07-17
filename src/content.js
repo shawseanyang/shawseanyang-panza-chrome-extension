@@ -28,7 +28,7 @@ InboxSDK.load(2, "sdk_panza_4e702e3f8e").then((sdk) => {
     let loadingInterval;
     let button = composeView.addButton({
       title: "Panza",
-      iconUrl: 'https://cdn4.iconfinder.com/data/icons/animal-kingdom/160/lama-512.png',
+      iconUrl: 'https://i.imgur.com/w6NxSwi.png',
       hasDropdown: true,
       onClick(event) {
         loadingStartTime = Date.now();
