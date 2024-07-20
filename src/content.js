@@ -18,6 +18,7 @@ async function get_panza_suggestion(text) {
     }
     return data;
   })
+  .then(data => data.generated_text)
 }
 
 function toHtml(text) {
