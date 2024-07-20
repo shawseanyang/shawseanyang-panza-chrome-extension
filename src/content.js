@@ -7,13 +7,17 @@ async function get_panza_suggestion(text) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'x-api-key': process.env.API_KEY,
     },
     body: JSON.stringify({text: text}),
   })
   .then(response => response.json())
   .then(data => {
-    return data.generated_text;
-  });
+    if (data.error) {
+      throw new Error(data.error);
+    }
+    return data;
+  })
 }
 
 function toHtml(text) {

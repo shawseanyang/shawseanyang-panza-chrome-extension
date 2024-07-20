@@ -1,7 +1,9 @@
 'use strict';
 
 const path = require('path');
+const webpack = require('webpack');
 const CopyPlugin = require("copy-webpack-plugin");
+require('dotenv').config(); // If you're using dotenv
 
 module.exports = {
   entry: {
@@ -28,6 +30,10 @@ module.exports = {
       patterns: [
         { from: "static" },
       ],
+    }),
+    // Inject the API key environment variable from the .env file
+    new webpack.DefinePlugin({
+      'process.env.API_KEY': JSON.stringify(process.env.API_KEY),
     }),
   ],
 };

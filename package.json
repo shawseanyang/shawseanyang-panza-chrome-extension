@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/shawseanyang/shawseanyang-panza-chrome-extension#readme",
   "dependencies": {
-    "@inboxsdk/core": "^2.1.51"
+    "@inboxsdk/core": "^2.1.51",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^12.0.2",
