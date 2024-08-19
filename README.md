@@ -1,6 +1,6 @@
 # Panza Chrome Extension
 
-<img width="582" alt="readme-example" src="example.png">
+![CleanShot 2024-08-19 at 21 29 32](https://github.com/user-attachments/assets/7e2cc34b-01d9-44a4-bce3-669b764e53b9)
 
 ## About
 A chrome extension for the [Panza](https://github.com/IST-DASLab/PanzaMail) project.
